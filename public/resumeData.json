@@ -1,8 +1,11 @@
 {
   "main": {
     "name":"Bailey Tincher",
-    "occupation":"Sophomore in Computer Science and Physics",
-    "location":"University of Illinois at Urbana-Champaign",
+    "schoolclass": "Sophomore",
+    "major1": "Computer Science",
+    "major2": "Physics",
+    "school":"University of Illinois",
+    "location":"Urbana-Champaign",
     "description":"I intend to live in a quantum future",
     "image":"profilepic.jpg",
     "bio":"Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",

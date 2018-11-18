@@ -18,6 +18,10 @@ class Header extends Component {
             var occupation = this.props.data.occupation;
             var description = this.props.data.description;
             var city = this.props.data.address.city;
+            var school = this.props.data.school;
+            var schoolclass = this.props.data.schoolclass;
+            var major1 = this.props.data.major1;
+            var major2 = this.props.data.major2;
             var location = this.props.data.location;
             var networks = this.props.data.social.map(function(network) {
                 return <li key={network.name}><a href={network.url}><i className={network.className}></i></a></li>
@@ -33,7 +37,7 @@ class Header extends Component {
         <a className="mobile-btn" href="#home" title="Hide navigation">Hide navigation</a>
 
          <ul id="nav" className="nav">
-            <li className="current"><NavLink smooth to="#home">Home</NavLink></li>
+            <li className="current"><NavLink scroll={el => scrollTo(el)} to="#home">Home</NavLink></li>
             <li><NavLink scroll={el => scrollTo(el)} to="#about">About</NavLink></li>
             <li><NavLink scroll={el => scrollTo(el)} to="#resume">Resume</NavLink></li>
             <li><NavLink scroll={el => scrollTo(el)} to="#portfolio">Works</NavLink></li>
@@ -46,9 +50,9 @@ class Header extends Component {
       <div className="row banner">
          <div className="banner-text">
             <h1 className="responsive-headline">I'm {name}<span id="cursor">_</span></h1>
-            <h3>I'm a <span>{occupation}</span></h3>
-            <h3>at the {location}.</h3>
-            <h3><span>{description}</span>.</h3>
+            <h3>I am a <span>{schoolclass}</span> studying <span>{major1}</span> and <span>{major2}</span></h3>
+            <h3>at the <span>{school}</span> at <span>{location}</span>.</h3>
+            <h3><span id="tagline">{description}</span>.</h3>
             <hr />
             <ul className="social">
                {networks}
