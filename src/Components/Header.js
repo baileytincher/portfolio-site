@@ -1,4 +1,14 @@
 import React, { Component } from 'react';
+import { NavHashLink as NavLink } from 'react-router-hash-link';
+
+const scrollTo = (el) => {
+    const elementPosition = el.offsetTop;
+    window.scroll({
+      top: elementPosition,
+      left: 0,
+      behavior: "smooth"
+    });
+}
 
 class Header extends Component {
     render() {
@@ -23,12 +33,12 @@ class Header extends Component {
         <a className="mobile-btn" href="#home" title="Hide navigation">Hide navigation</a>
 
          <ul id="nav" className="nav">
-            <li className="current"><a className="smoothscroll" href="#home">Home</a></li>
-            <li><a className="smoothscroll" href="#about">About</a></li>
-            <li><a className="smoothscroll" href="#resume">Resume</a></li>
-            <li><a className="smoothscroll" href="#portfolio">Works</a></li>
-            <li><a className="smoothscroll" href="#testimonials">Testimonials</a></li>
-            <li><a className="smoothscroll" href="#contact">Contact</a></li>
+            <li className="current"><NavLink smooth to="#home">Home</NavLink></li>
+            <li><NavLink scroll={el => scrollTo(el)} to="#about">About</NavLink></li>
+            <li><NavLink scroll={el => scrollTo(el)} to="#resume">Resume</NavLink></li>
+            <li><NavLink scroll={el => scrollTo(el)} to="#portfolio">Works</NavLink></li>
+            <li><NavLink scroll={el => scrollTo(el)} to="#testimonials">Testimonials</NavLink></li>
+            <li><NavLink scroll={el => scrollTo(el)} to="#contact">Contact</NavLink></li>
          </ul>
 
       </nav>
@@ -47,7 +57,7 @@ class Header extends Component {
       </div>
 
       <p className="scrolldown">
-         <a className="smoothscroll" href="#about"><i className="icon-down-circle"></i></a>
+         <NavLink scroll={el => scrollTo(el)} to="#about"><i className="icon-down-circle"></i></NavLink >
       </p>
 
    </header>

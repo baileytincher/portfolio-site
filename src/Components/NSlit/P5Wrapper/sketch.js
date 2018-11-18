@@ -27,12 +27,12 @@ export default function(p) {
   }
 
   p.setup = function() {
+    onReady();
     let cnvWidth = Math.min(900, p.windowWidth * 0.9);
     let cnvHeight = cnvWidth * 2 / 3;
     p.createCanvas(cnvWidth, cnvHeight);
     console.log("::: displayDensity:", p.displayDensity());
     console.log("::: pixelDensity:", p.pixelDensity());
-    onReady();
     p.pixelDensity(p.displayDensity());
   }
 
