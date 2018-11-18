@@ -52,7 +52,6 @@ export default function(p) {
     let diff = props.diffraction;
     let a = props.slidera;
 
-    console.log(diff);
     p.strokeWeight(2);
     p.stroke(0, 61, 153);
 

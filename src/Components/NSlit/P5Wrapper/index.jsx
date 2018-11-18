@@ -11,12 +11,13 @@ class P5Wrapper extends Component {
   componentDidMount() {
     this.canvas = new window.p5(sketch, "app-p5_container");
     this.canvas.setOnReady(this.props.onReady);
+    this.forceUpdate();
   }
 
   componentDidUpdate(nextProps) {
     this.canvas.pushProps({ ...this.props.p5Props });
     this.setState();
-    console.log(this.props.p5Props.diffraction);
+    console.log("Updating props sent to canvas");
 
   }
 
