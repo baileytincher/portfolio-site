@@ -43,7 +43,7 @@ class Header extends Component {
             <li className="current"><NavLink activeClassName="active" scroll={el => scrollTo(el)} to="#home">Home</NavLink></li>
             <li><NavLink activeClassName="active" scroll={el => scrollTo(el)} to="#about">My Story</NavLink></li>
             <li><NavLink activeClassName="active" scroll={el => scrollTo(el)} to="#resume">Resume</NavLink></li>
-            <li><NavLink activeClassName="active" scroll={el => scrollTo(el)} to="#portfolio">Portfolio</NavLink></li>
+            <li><NavLink activeClassName="active" scroll={el => scrollTo(el)} to="#portfolio">Projects</NavLink></li>
             <li><NavLink activeClassName="active" scroll={el => scrollTo(el)} to="#testimonials">Testimonials</NavLink></li>
             <li><NavLink activeClassName="active" scroll={el => scrollTo(el)} to="#contact">Contact</NavLink></li>
             </ul>

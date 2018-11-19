@@ -8,6 +8,7 @@ export default function(p) {
     ds = new PenroseLSystem();
     p.pixelDensity(p.displayDensity());
     ds.simulate(4);
+
   };
 
   p.windowResized = function() {
@@ -15,7 +16,7 @@ export default function(p) {
   };
 
   p.draw = function() {
-    ds.render();
+    ds.render(props.color);
   };
 
   p.setOnReady = function(cb) {
@@ -89,7 +90,7 @@ export default function(p) {
     this.production = newProduction;
   }
   //convert production string to a turtle graphic
-  PenroseLSystem.prototype.render = function() {
+  PenroseLSystem.prototype.render = function(color) {
     p.translate(p.width / 2, p.height / 2);
 
     this.steps += 20;
@@ -102,7 +103,7 @@ export default function(p) {
 
       //'W', 'X', 'Y', 'Z' symbols don't actually correspond to a turtle action
       if (step == 'F') {
-        p.stroke(30, 30, 255, 2);
+        p.stroke('rgba(10%,10%,100%,0.005)');
         for (var j = 0; j < this.repeats; j++) {
           p.line(0, 0, 0, -this.drawLength);
           p.noFill();

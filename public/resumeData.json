@@ -8,8 +8,8 @@
     "location":"Urbana-Champaign",
     "description":"I intend to live in a quantum future",
     "image":"profilepic.jpg",
-    "bio":"Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
-    "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
+    "bio":"In Dev",
+    "contactmessage":"In Dev",
     "email": "bailey.tincher@btin.io",
     "phone": "815-530-7378",
     "address":{
@@ -49,7 +49,7 @@
     ]
   },
   "resume":{
-    "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
+    "skillmessage":"In Dev",
     "education":[
       {
         "school":"University of Illinois at Urbana-Champaign",
@@ -146,44 +146,44 @@
       {
         "title":"Personal Site",
         "category":"This website!",
-        "image":"canadian-wanderlust.jpg",
+        "image":"btin.io-screenshot.png",
         "url":"http://btin.io"
       },
       {
         "title":"UIUC Events Alexa Skill",
         "category":"A simple skill for the Amazon Assistant that scrapes events going on at the University of Illinois",
-        "image":"fury-fighting-gear.jpg",
-        "url":"http://www.timbakerdev.com"
+        "image":"uiuc-events-screenshot.png",
+        "url":"https://www.amazon.com/Bailey-Tincher-University-Illinois-Events/dp/B07KH5F32M/ref=sr_1_1?s=digital-skills&ie=UTF8&qid=1542598536&sr=1-1&keywords=university+of+illinois+events"
       },
       {
         "title":"N-Slit Diffraction Simulation",
         "category":"A visualization of the quantum mechanical phenomena of diffraction",
-        "image":"original-thai-food.jpg",
+        "image":"n-slit-screenshot.png",
         "url":"http://btin.io/nslit"
       },
       {
         "title":"Chemical Molecule Drawer",
         "category":"A custom organic molecule drawing library I created for UIUC CS 125 students",
-        "image":"resume-website.jpg",
-        "url":"http://www.timbakerdev.com"
+        "image":"molecule-screenshot.png",
+        "url":"https://github.com/baileytincher/Molecule_Drawer"
       },
       {
         "title":"News Web Scraper Alexa Skill",
         "category":"An alexa skill that pulls news headlines from major media sources",
-        "image":"smirkspace.jpg",
-        "url":"http://www.smirkspace.com"
+        "image":"adsa-logo.png",
+        "url":"https://github.com/ADSA-UIUC/webScraperSP18"
       }
     ]
   },
   "testimonials":{
     "testimonials":[
       {
-        "text":"Here you should write some nice things that someone has said about you. No lies though, employers can tell when you are lying.",
-        "user":"Kareem Abdul Jabbar"
+        "text":"Under Dev",
+        "user":""
       },
       {
-        "text":"That Tim Baker must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be fresh out of University and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
-        "user":"Steve Wozniak... impersonator"
+        "text":"",
+        "user":""
       }
     ]
   }
